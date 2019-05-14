@@ -11,7 +11,7 @@ Enable-PSRemoting -SkipNetworkProfileCheck -Force
 Set-NetFirewallRule -Name "WINRM-HTTP-In-TCP" -RemoteAddress Any # allow winrm over public profile interfaces
 
 winrm set "winrm/config" '@{MaxTimeoutms="1800000"}'
-winrm set "winrm/config/winrs" '@{MaxMemoryPerShellMB="2048"}'
+winrm set "winrm/config/winrs" '@{MaxMemoryPerShellMB="4096"}'
 winrm set "winrm/config/service" '@{AllowUnencrypted="true"}'
 winrm set "winrm/config/service/auth" '@{Basic="true"}'
 

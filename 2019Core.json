@@ -24,7 +24,7 @@
 			"shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
 			"shutdown_timeout": "15m",
 			"floppy_files": [
-				"Autounattend.xml"
+				"AutounattendCore.xml"
 			]
 	}],
 	"provisioners": [{
@@ -133,6 +133,6 @@
 		"headless": "true",
 		"iso_checksum": "221F9ACBC727297A56674A0F1722B8AC7B6E840B4E1FFBDD538A9ED0DA823562",
 		"iso_url": "./17763.379.190312-0539.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso",
-		"template": "LEXX-WS2019STANDARD"
+		"template": "LEXX-WS2019STANDARDCORE"
 	}
 }
